@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SapphireFlow</title>
+    <meta name="csrf-param" content="authenticity_token" />
+    <meta name="csrf-token" content="<%= csrf_meta_tags %>" />
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <script type="importmap" data-turbo-track="reload">
+    {
+      "imports": {
+        "@hotwired/turbo-rails": "/assets/turbo.js",
+        "application": "/assets/application.js"
+      }
+    }
+    </script>
+    <%= javascript_importmap_tags %>
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
